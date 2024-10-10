@@ -34,7 +34,6 @@ async function fetchProperty(id) {
     const res = await fetch(`${apiDomain}/properties/${id}`, {
       cache: "no-store",
     });
-    console.log("Response:", res);
 
     if (!res.ok) {
       console.error("Failed response:", res.status, res.statusText);
